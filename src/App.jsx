@@ -7,12 +7,12 @@ import { Suspense, useState } from "react";
 import Cart from "./components/Cart";
 
 const getModels = async () => {
-  const res = await fetch("/public/models.json");
+  const res = await fetch("/models.json");
   return res.json();
 };
 
+const modelPromise = getModels();
 function App() {
-  const modelPromise = getModels();
   const [activeTab, setActiveTab] = useState("Models");
   const [carts, setCarts] = useState([]);
 
