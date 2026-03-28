@@ -18,7 +18,7 @@ const ModelCard = ({model, carts, setCarts}) => {
     return (
           <div className="shadow-lg rounded-lg border overflow-hidden border-zinc-300">
 
-            <div className="flex justify-center items-center h-56 bg-amber-50">
+            <div className="flex justify-center items-center h-56 bg-amber-100">
               <img className="h-40 w-40 object-contain" src={model.image} alt="" />
             </div>
 
