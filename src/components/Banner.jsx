@@ -1,4 +1,4 @@
-import BannerImage from "../assets/banner.png";
+import BannerImage from "../../public/logo.png";
 
 const Banner = () => {
   return (
@@ -24,7 +24,7 @@ const Banner = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <button className="bg-red-600 hover:bg-red-500 transition-all px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-red-500/30 flex items-center gap-3 group text-white">
+            <button className="bg-red-600 hover:bg-red-500 transition-all px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-red-500/30 flex items-center gap-3 group text-white cursor-pointer">
               Get Unlimited Access
               <span className="group-hover:translate-x-1 transition">→</span>
             </button>
@@ -41,7 +41,7 @@ const Banner = () => {
         <div className="relative flex justify-center lg:justify-end">
           <div className="relative">
             <img
-              className="relative h-130 w-auto object-contain drop-shadow-2xl rounded-3xl animate-pulse"
+              className="relative h-130 w-auto object-contain drop-shadow-2xl rounded-3xl "
               src={BannerImage}
               alt="AI Models Banner"
             />

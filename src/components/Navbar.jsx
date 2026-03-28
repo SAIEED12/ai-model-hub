@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal gap-10 px-1 text-lg">
           <li>
-            <a>Home</a>
+            <a className="bg-red-500 rounded-lg">Home</a>
           </li>
           <li>
             <a>About</a>
@@ -23,7 +23,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-5">
-        <a className="btn bg-red-500 rounded-full text-white">Get in Touch</a>
+        <a className="btn bg-red-600 shadow-xl shadow-red-500/30 hover:bg-red-500 rounded-full text-white">Get in Touch</a>
       </div>
     </div>
   );
