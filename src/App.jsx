@@ -13,8 +13,8 @@ const getModels = async () => {
 
 function App() {
   const modelPromise = getModels();
-  const [activeTab, setActiveTab] = useState("Models")
-  const [carts, setCarts] = useState([])
+  const [activeTab, setActiveTab] = useState("Models");
+  const [carts, setCarts] = useState([]);
 
   return (
     <>
@@ -30,21 +30,34 @@ function App() {
           className={`tab rounded-full w-40 ${activeTab === "Models" ? "bg-red-500 font-semibold" : ""}`}
           aria-label="Models"
           defaultChecked
-          onClick={()=> setActiveTab("Models")}
+          onClick={() => setActiveTab("Models")}
         />
         <input
           type="radio"
           name="my_tabs_1"
           className={`tab rounded-full w-40 ${activeTab === "Cart" ? "bg-red-500 font-semibold" : ""}`}
           aria-label={`Cart(${carts.length})`}
-          onClick={()=> setActiveTab("Cart")}
-          
+          onClick={() => setActiveTab("Cart")}
         />
       </div>
 
-      <Suspense>
-        {activeTab === "Models" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}></Models>}
-        {activeTab === "Cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center min-h-[50vh]">
+            <span className="loading loading-spinner text-error"></span>
+          </div>
+        }
+      >
+        {activeTab === "Models" && (
+          <Models
+            modelPromise={modelPromise}
+            carts={carts}
+            setCarts={setCarts}
+          ></Models>
+        )}
+        {activeTab === "Cart" && (
+          <Cart carts={carts} setCarts={setCarts}></Cart>
+        )}
       </Suspense>
 
       <Footer></Footer>
