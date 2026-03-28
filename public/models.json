@@ -16,14 +16,6 @@
     "status": "favourite"
   },
   {
-    "id": 3,
-    "title": "DeepSeek",
-    "description": "Powerful open-source focused AI from China.\nExcellent at coding, math, and cost-effective reasoning.",
-    "price": 0,
-    "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/deepseek-logo-icon.png",
-    "status": "mostwanted"
-  },
-  {
     "id": 4,
     "title": "Gemini",
     "description": "Google's advanced multimodal AI.\nDeep integration with Google ecosystem and strong reasoning.",
@@ -77,6 +69,14 @@
     "description": "Alibaba's high-performing Chinese AI series.\nOutstanding in coding, math, and multilingual understanding.",
     "price": 0,
     "image": "https://img.alicdn.com/imgextra/i3/O1CN01zaxxvj1p4f0VrY17j_!!6000000005307-54-tps-180-180.apng",
+    "status": "mostwanted"
+  },
+  {
+    "id": 3,
+    "title": "DeepSeek",
+    "description": "Powerful open-source focused AI from China.\nExcellent at coding, math, and cost-effective reasoning.",
+    "price": 0,
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/deepseek-logo-icon.png",
     "status": "mostwanted"
   },
   {

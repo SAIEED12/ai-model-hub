@@ -18,7 +18,7 @@ const Banner = () => {
             </span>
           </h1>
 
-          <p className="text-lg text-zinc-700 max-w-lg">
+          <p className="text-lg text-white max-w-lg">
             Experience the full spectrum of frontier intelligence — all the most
             advanced AI models, unified under a single, powerful subscription.
           </p>
@@ -30,7 +30,7 @@ const Banner = () => {
             </button>
           </div>
 
-          <div className="flex items-center gap-8 text-sm text-zinc-600 pt-6">
+          <div className="flex items-center gap-8 text-sm text-white pt-6">
             <div>✓ 50+ Frontier Models</div>
             <div>✓ No Usage Limits</div>
             <div>✓ Cancel Anytime</div>
