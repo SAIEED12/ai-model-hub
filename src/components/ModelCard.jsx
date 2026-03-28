@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const ModelCard = ({model, carts, setCarts}) => {
     const [isSubscribed, setIsSubscribed] = useState(false); 
 
     const handleSubscription = ()=>{
         setIsSubscribed(true)
+
+        const isFound = carts.find(item => item.id === model.id)
+        if(isFound){
+          toast.error("Item already subscribed!")
+          return
+        }
         setCarts([...carts, model])
+        toast.success("Item Added to Cart!")
     }
     return (
           <div className="shadow-lg rounded-lg border overflow-hidden border-zinc-300">
